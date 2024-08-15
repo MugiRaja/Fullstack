@@ -1,0 +1,279 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+     /* overflow-x: hidden; */ 
+}
+body{
+    width: 100%;
+    background-color: rgb(216, 220, 225);
+    overflow-x: hidden;
+}
+.header{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar ul{
+    list-style-type: none;
+    gap: 40px;
+    display: flex;
+}
+.socialmedia{
+    height: 40px;
+    width: 160px;
+}
+.socialmedia ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.socialmedia a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transform: rotate(45deg);
+    transition: .5s;
+    opacity: 0;
+    animation: slideicon .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+.socialmedia a i{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    transform: rotate(-45deg);
+    
+}
+.socialmedia a:hover{
+    border: 2px solid white;
+    text-shadow: 2px 2px 5px black;
+    color: black;
+    background-color: rgb(159, 107, 24);
+}
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 550;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.navbar a:hover{
+    color: rgb(210, 138, 23);
+    transition: .3s;
+}
+
+
+.header h1{
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.home{
+    width: auto;
+    height: 82.3vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0;
+    gap: 300px;
+    overflow: hidden;
+}
+.contessacar{
+
+    min-width: 650px;
+}
+.contessacar h1{
+    font-size: 50px;
+    line-height: 1.2;
+    opacity: 0;
+    animation: slideh1 1s ease forwards;
+}
+.contessacar h3{
+    font-size: 40px;
+    opacity: 0;
+    animation: slideh3 1s ease forwards;
+}
+.contessacar pre{
+    font-size: 16px;
+    margin: 15px 0 30px;
+    font-weight: 550;
+    opacity: 0;
+    animation: slidepre 1s ease forwards;
+}
+.explore{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    background-color:rgb(210, 138, 23);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    border: 4px solid rgb(210, 138, 23);
+    font-weight: 600;
+    transition: .5s;
+    opacity: 0;
+    animation: slideexplore 1s ease forwards;
+}
+.explore:hover{
+    background-color: aliceblue;
+    color:rgb(210, 138, 23);
+}
+.contessaimg{
+    position: relative;
+    width: 340px;
+    height: 340px;
+}
+.contessaimg div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 220, 225);
+    border: 25px solid rgb(210, 138, 23);
+    transform: rotate(45deg);
+    right: -100px;
+    box-shadow: 5px 5px 15px black;
+    opacity: 0;
+    animation: slidediv 1s ease forwards;
+    
+}
+.contessaimg img{
+    position: absolute;
+    max-width: 750px;
+    right: -90px;
+    transform: rotate(-40deg);
+    top: -100px;
+    opacity: 0;
+    animation: slideimg 1s ease forwards;
+}
+.img{
+    position: absolute;
+    background-color: rgb(210, 138, 23);
+    width: 700px;
+    height: 700px;
+    transform: rotate(45deg);
+    right: -25%;
+    top: -25%;
+    z-index: -1;
+    opacity: 0;
+    animation: slideimg1 1s ease forwards;
+}
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideicon{
+    0%{
+        transform: translatex(-100px) rotate(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideh1{
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideh3{
+    0%{
+        transform: translatex(-100px) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0) ;
+        opacity: 1;
+    }
+}
+
+
+@keyframes slidepre{
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideexplore{
+    0%{
+        transform: translatex(-100px) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0) ;
+        opacity: 1;
+    }
+}
+@keyframes slidediv{
+    0%{
+        transform: translatey(-100px)rotate(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0)rotate(45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideimg{
+    0%{
+        transform: translatex(-100px) rotate(-45deg) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0) rotate(-45deg);
+        opacity: 1;
+    }
+}
+@keyframes slideimg1{
+    0%{
+        transform: translatey(-100px) rotate(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0) rotate(45deg);
+        opacity: 1;
+    }
+}
