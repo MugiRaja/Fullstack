@@ -18,6 +18,9 @@
 .backgroundmine{
 background-color: rgb(225, 218, 215);
 }
+.bgbrown{
+    background-color: rgb(217, 194, 194);
+}
 body{
     -ms-overflow-style: none;
     background-color: rgb(225, 218, 215);
