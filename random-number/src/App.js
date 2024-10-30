@@ -9,9 +9,9 @@ function App() {
     setRandomNumber(number);
   };
   return (
-    <div>
-      <p>Random Number: {randomNumber}</p>
-      <button variant="primary" onClick={() => generateRandomNumber (1,6)}>
+    <div class="w-full h-svh bg-pink-600 flex items-center justify-center flex-col">
+      <p class="text-3xl pb-12 font-medium">Random Number: {randomNumber}</p>
+      <button class="bg-zinc-950 text-fuchsia-50 w-28 h-7 rounded-xl" variant="primary" onClick={() => generateRandomNumber (1,6)}>
         Click me
       </button>
     </div>
