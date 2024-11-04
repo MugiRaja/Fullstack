@@ -15,7 +15,7 @@ export const Stateandprops = () => {
   return (
     <div>
       <span>{valueIncrease}</span>
-      <button onClick={increment}>Increment</button>
+      <button class="" onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
       <button onClick={reset}>Reset</button>
     </div>
