@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ChildProps = (demo) => {
+const ChildProps = (name) => {
   return (
-    <div>{demo.message}
-    <div>{demo.name}</div>
+    <div>{name.message}
+    <div>{name.name}</div>
     
     
     </div>
