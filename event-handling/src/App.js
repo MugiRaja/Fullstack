@@ -3,6 +3,7 @@ import { Stateandprops } from "./Pratice/Stateandprops";
 import ParentProps from "./Pratice/ParentProps";
 import ChildProps from "./Pratice/ChildProps";
 import State from "./Pratice/State";
+import UseEffect from "./Pratice/UseEffect";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <ParentProps/>
       <ChildProps/>
       <State/>
+      <UseEffect/>
     </div>
   );
 };
