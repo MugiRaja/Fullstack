@@ -4,6 +4,7 @@ import State from "./Pratice/State";
 import ParentProps from "./Pratice/ParentProps";
 import { Stateandprops } from "./Pratice/Stateandprops";
 import UseEffect from "./Pratice/UseEffect";
+import ConditionalRendering from "./Pratice/ConditionalRendering";
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
           <li>
             <Link to="/useEffect"> useeffect</Link>
           </li>
+          <li>
+            <Link to="/conditionalRendering">ConditionalRendering</Link>
+          </li>
         </ul>
       </div>
       <Routes>
@@ -30,6 +34,7 @@ const App = () => {
         <Route path="/parentProps" element={<ParentProps />} />
         <Route path="/stateAndProps" element={<Stateandprops />} />
         <Route path="/useEffect" element={<UseEffect />} />
+        <Route path="/conditionalRendering" element={<ConditionalRendering />} />
       </Routes>
     </BrowserRouter>
   );
