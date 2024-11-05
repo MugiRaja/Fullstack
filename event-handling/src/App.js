@@ -9,33 +9,54 @@ import ConditionalRendering from "./Pratice/ConditionalRendering";
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <h3>React Pratices</h3>
-        <ul>
-          <li>
-            <Link to="/state">01 State</Link>
-          </li>
-          <li>
-            <Link to="/parentProps">props</Link>
-          </li>
-          <li>
-            <Link to="/stateAndProps">State & Props</Link>
-          </li>
-          <li>
-            <Link to="/useEffect"> useeffect</Link>
-          </li>
-          <li>
-            <Link to="/conditionalRendering">ConditionalRendering</Link>
-          </li>
-        </ul>
+      <div className=" flex justify-between items-center px-10">
+        <div className=" overflow-auto">
+          <h3 className="font-extrabold text-3xl w-full flex justify-center">
+            React Pratices
+          </h3>
+          <ul>
+            <li>
+              <Link to="/state" className="text-blue-600 underline">
+                01 State
+              </Link>
+            </li>
+            <li>
+              <Link className="text-blue-600 underline" to="/parentProps">
+                props
+              </Link>
+            </li>
+            <li>
+              <Link className="text-blue-600 underline" to="/stateAndProps">
+                State & Props
+              </Link>
+            </li>
+            <li>
+              <Link className="text-blue-600 underline" to="/useEffect">
+                {" "}
+                useeffect
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-blue-600 underline"
+                to="/conditionalRendering"
+              >
+                ConditionalRendering
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <Routes>
+          <Route path="/state" element={<State />} />
+          <Route path="/parentProps" element={<ParentProps />} />
+          <Route path="/stateAndProps" element={<Stateandprops />} />
+          <Route path="/useEffect" element={<UseEffect />} />
+          <Route
+            path="/conditionalRendering"
+            element={<ConditionalRendering />}
+          />
+        </Routes>
       </div>
-      <Routes>
-        <Route path="/state" element={<State />} />
-        <Route path="/parentProps" element={<ParentProps />} />
-        <Route path="/stateAndProps" element={<Stateandprops />} />
-        <Route path="/useEffect" element={<UseEffect />} />
-        <Route path="/conditionalRendering" element={<ConditionalRendering />} />
-      </Routes>
     </BrowserRouter>
   );
 };
