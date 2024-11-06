@@ -6,6 +6,7 @@ import AddTwoNumbers from './DSA Pratices/AddTwoNumbers';
 import FindSquareRoot from './DSA Pratices/FindSquareRoot';
 import AreaOfTriangle from './DSA Pratices/AreaOfTriangle';
 import SwapVariables from './DSA Pratices/SwapVariables';
+import QuadraticEquation from './DSA Pratices/QuadraticEquation';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
     <div className='  '>
       <h1 className='text-4xl text-center '>DSA Pratices</h1>
       <div className='flex'>
-      <div className='text-blue-600 underline w-1/2 h-svh flex overflow-x-scroll border-r-2 border-black'>
+      <div className='text-blue-600 underline w-1/2 h-svh flex overflow-y-scroll border-r-2 border-black'>
         <ul >
           <li>
           <Link  to="/HelloWorld">Print Hello World</Link>
@@ -30,6 +31,9 @@ function App() {
           <li>
             <Link to="/SwapVariables">Swap Variables</Link>
           </li>
+          <li>
+            <Link to="/QuadraticEquation">QuadraticEquation</Link>
+          </li>
         </ul>
       </div>
       <div className=' w-1/2 h-svh flex justify-center items-center'>
@@ -39,6 +43,7 @@ function App() {
       <Route path='/FindSquareRoot' element={ <FindSquareRoot/>}/>
       <Route path='/AreaOfTriangle' element={ <AreaOfTriangle/>}/>
       <Route path='/SwapVariables' element={ <SwapVariables/>}/>
+      <Route path='/QuadraticEquation' element={ <QuadraticEquation/>}/>
       </Routes>
       </div>
       </div>
