@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import HelloWorld from './DSA Pratices/HelloWorld';
 import AddTwoNumbers from './DSA Pratices/AddTwoNumbers';
+import FindSquareRoot from './DSA Pratices/FindSquareRoot';
 
 function App() {
   return (
@@ -18,12 +19,14 @@ function App() {
           <li>
             <Link to="/AddTwoNumbers">Add Two Numbers</Link>
           </li>
+          <Link to="/FindSquareRoot">Find Square Root</Link>
         </ul>
       </div>
       <div className=' w-1/2 h-svh flex justify-center items-center'>
       <Routes>
       <Route  path="/HelloWorld" element={<HelloWorld />} />
       <Route path='/AddTwoNumbers' element={<AddTwoNumbers/>}/>
+      <Route path='FindSquareRoot' element={ <FindSquareRoot/>}/>
       </Routes>
       </div>
       </div>
