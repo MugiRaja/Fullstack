@@ -7,14 +7,15 @@ import FindSquareRoot from './DSA Pratices/FindSquareRoot';
 import AreaOfTriangle from './DSA Pratices/AreaOfTriangle';
 import SwapVariables from './DSA Pratices/SwapVariables';
 import QuadraticEquation from './DSA Pratices/QuadraticEquation';
+import ConvertKilometersToMiles from './DSA Pratices/ConvertKilometersToMiles';
 
 function App() {
   return (
    <BrowserRouter>
-    <div className='  '>
+    <div className='w-full h-svh'>
       <h1 className='text-4xl text-center '>DSA Pratices</h1>
-      <div className='flex'>
-      <div className='text-blue-600 underline w-1/2 h-svh flex overflow-y-scroll border-r-2 border-black'>
+      <div className='flex h-[94%]'>
+      <div className='text-blue-600 underline w-[30%] flex overflow-y-scroll border-r-2 border-black'>
         <ul >
           <li>
           <Link  to="/HelloWorld">Print Hello World</Link>
@@ -34,9 +35,12 @@ function App() {
           <li>
             <Link to="/QuadraticEquation">QuadraticEquation</Link>
           </li>
+          <li>
+            <Link to="/ConvertKilometersToMiles">Convert Kilometers To Miles</Link>
+          </li>
         </ul>
       </div>
-      <div className=' w-1/2 h-svh flex justify-center items-center'>
+      <div className=' w-[70%]  flex justify-center items-center'>
       <Routes>
       <Route  path="/HelloWorld" element={<HelloWorld />} />
       <Route path='/AddTwoNumbers' element={<AddTwoNumbers/>}/>
@@ -44,6 +48,7 @@ function App() {
       <Route path='/AreaOfTriangle' element={ <AreaOfTriangle/>}/>
       <Route path='/SwapVariables' element={ <SwapVariables/>}/>
       <Route path='/QuadraticEquation' element={ <QuadraticEquation/>}/>
+      <Route path='/ConvertKilometersToMiles' element={ <ConvertKilometersToMiles/>}/>
       </Routes>
       </div>
       </div>
