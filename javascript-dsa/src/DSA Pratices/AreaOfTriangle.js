@@ -23,11 +23,11 @@ const AreaOfTriangle = () => {
       <h1>Find the Area Of Triangle</h1>
       <div className="flex flex-col  items-center justify-center">
         <h1>Enter The Value for Base</h1>
-        <input type="number" onChange={getValueBase} />
+        <input className="rounded-lg" type="number" onChange={getValueBase} />
         <h1>Enter The Value for Height </h1>
-        <input type="number" onChange={getValueHeight} />
+        <input className="rounded-lg" type="number" onChange={getValueHeight} />
       </div>
-      <button onClick={ans}>Click Me</button>
+      <button className='button' onClick={ans}>Click Me</button>
       <p>Answer: {ansAreaOfTriangle}</p>
     </div>
   );

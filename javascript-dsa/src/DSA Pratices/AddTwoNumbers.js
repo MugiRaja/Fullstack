@@ -18,7 +18,7 @@ const AddTwoNumbers = () => {
         <h1>Add Two Numbers</h1>
       <input type="number" onChange={getValue1}  className='border-2 rounded-lg' />
       <input type="number" onChange={getValue2} className='border-2 rounded-lg' />
-      <button onClick={ans}>Click Me</button>
+      <button className='button' onClick={ans}>Click Me</button>
       <p>Answer: {sumAns}</p>
     </div>
   )

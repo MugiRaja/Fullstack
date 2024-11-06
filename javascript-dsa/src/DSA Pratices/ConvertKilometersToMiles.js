@@ -12,8 +12,8 @@ const ConvertKilometersToMiles = () => {
   return (
     <div className="w-96 h-52 bg-orange-500 flex flex-col gap-5 items-center justify-center rounded-lg gap-2">
       <h1>Convert Kilometers To Miles</h1>
-      <input className="rounded-lg" type="number" onChange={getValue} />
-      <button onClick={ans}>Click Me</button>
+      <input  className="rounded-lg" type="number" onChange={getValue} />
+      <button className='button' onClick={ans}>Click Me</button>
       <p>Answer: {ansKilometersToMiles}</p>
     </div>
   );

@@ -14,3 +14,18 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button{
+  border: 5px rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+}
+.button:hover{
+  background-color: aliceblue;
+  color: black;
+  border: 2px;
+  border-color: aliceblue;
+}

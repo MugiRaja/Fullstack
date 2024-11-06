@@ -29,11 +29,11 @@ const QuadraticEquation = () => {
     <div className="w-96 h-52 bg-orange-500 flex flex-col items-center justify-center rounded-lg gap-2">
       <h1>Quadratic Equation</h1>
       <div className="flex flex-col gap-1">
-        <input type="number" onChange={getValue1} />
-        <input type="number" onChange={getValue2} />
-        <input type="number" onChange={getValue3} />
+        <input className="rounded-lg" type="number" onChange={getValue1} />
+        <input className="rounded-lg" type="number" onChange={getValue2} />
+        <input className="rounded-lg" type="number" onChange={getValue3} />
       </div>
-      <button onClick={ans}>Click Me</button>
+      <button className='button' onClick={ans}>Click Me</button>
       <p>Root One: {ansQuadraticEquation}</p>
       <p>Root Two: {ansQuadraticEquation1}</p>
     </div>

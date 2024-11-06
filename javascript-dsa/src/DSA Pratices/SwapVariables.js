@@ -20,11 +20,11 @@ const SwapVariables = () => {
       <h1>Swap Variables</h1>
       <div className="flex flex-col  items-center justify-center">
         <h1>Enter The Value for A</h1>
-        <input type="number" onChange={getValueOne} />
+        <input className="rounded-lg" type="number" onChange={getValueOne} />
         <h1>Enter The Value for B </h1>
-        <input type="number" onChange={getValueTwo} />
+        <input className="rounded-lg" type="number" onChange={getValueTwo} />
       </div>
-      <button onClick={swap1}>Click Me</button>
+      <button className='button' onClick={swap1}>Click Me</button>
       <div>
         <p>Variable One: {swapVariable}</p>
         <p>Variable Two: {swapVariable1}</p>
