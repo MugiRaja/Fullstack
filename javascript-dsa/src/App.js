@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import HelloWorld from './DSA Pratices/HelloWorld';
 import AddTwoNumbers from './DSA Pratices/AddTwoNumbers';
 import FindSquareRoot from './DSA Pratices/FindSquareRoot';
+import AreaOfTriangle from './DSA Pratices/AreaOfTriangle';
 
 function App() {
   return (
@@ -19,14 +20,20 @@ function App() {
           <li>
             <Link to="/AddTwoNumbers">Add Two Numbers</Link>
           </li>
+          <li>
           <Link to="/FindSquareRoot">Find Square Root</Link>
+          </li>
+          <li>
+            <Link to="/AreaOfTriangle">Find Area Of Triangle</Link>
+          </li>
         </ul>
       </div>
       <div className=' w-1/2 h-svh flex justify-center items-center'>
       <Routes>
       <Route  path="/HelloWorld" element={<HelloWorld />} />
       <Route path='/AddTwoNumbers' element={<AddTwoNumbers/>}/>
-      <Route path='FindSquareRoot' element={ <FindSquareRoot/>}/>
+      <Route path='/FindSquareRoot' element={ <FindSquareRoot/>}/>
+      <Route path='/AreaOfTriangle' element={ <AreaOfTriangle/>}/>
       </Routes>
       </div>
       </div>
