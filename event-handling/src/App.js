@@ -31,10 +31,7 @@ const App = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-blue-600 underline" to="/useEffect">
-                {" "}
-                useeffect
-              </Link>
+              <Link className="text-blue-600 underline" to="/useEffect"></Link>
             </li>
             <li>
               <Link
