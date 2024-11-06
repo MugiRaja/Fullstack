@@ -8,6 +8,7 @@ const CreateRandomNumber = () => {
   }
   return (
     <div className="w-96 h-52 bg-orange-500 flex flex-col gap-5 items-center justify-center rounded-lg gap-2">
+        <h1>Create Ramdom Number</h1>
         <p className='bg-white w-10 text-center rounded-lg'>{randomNumber}</p>
         <button className='button' onClick={() => generateRandomNumber (1,6)}>Click Me</button>
     </div>

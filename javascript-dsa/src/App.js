@@ -9,6 +9,7 @@ import SwapVariables from "./DSA Pratices/SwapVariables";
 import QuadraticEquation from "./DSA Pratices/QuadraticEquation";
 import ConvertKilometersToMiles from "./DSA Pratices/ConvertKilometersToMiles";
 import CreateRandomNumber from "./DSA Pratices/CreateRandomNumber";
+import CheckOddOrEven from "./DSA Pratices/CheckOddOrEven";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
               <li>
                 <Link to="/CreateRandomNumber">Create Random Number</Link>
               </li>
+              <li>
+                <Link to="/CheckOddOrEven">Check Odd Or Even</Link>
+              </li>
             </ul>
           </div>
           <div className=" w-[70%]  flex justify-center items-center">
@@ -65,6 +69,7 @@ function App() {
                 path="/CreateRandomNumber"
                 element={<CreateRandomNumber />}
               />
+              <Route path="/CheckOddOrEven" element={<CheckOddOrEven />} />
             </Routes>
           </div>
         </div>
