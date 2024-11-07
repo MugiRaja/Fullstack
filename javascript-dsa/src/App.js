@@ -47,7 +47,9 @@ function App() {
                 <Link to="/CreateRandomNumber">Create Random Number</Link>
               </li>
               <li>
-                <Link to="/CheckPositiveNegativeOrZero">Check Positive Negative Or Zero</Link>
+                <Link to="/CheckPositiveNegativeOrZero">
+                  Check Positive Negative Or Zero
+                </Link>
               </li>
               <li>
                 <Link to="/CheckOddOrEven">Check Odd Or Even</Link>
@@ -60,7 +62,7 @@ function App() {
               <Route path="/AddTwoNumbers" element={<AddTwoNumbers />} />
               <Route path="/FindSquareRoot" element={<FindSquareRoot />} />
               <Route path="/AreaOfTriangle" element={<AreaOfTriangle />} />
-              
+
               <Route path="/SwapVariables" element={<SwapVariables />} />
               <Route
                 path="/QuadraticEquation"
@@ -74,7 +76,10 @@ function App() {
                 path="/CreateRandomNumber"
                 element={<CreateRandomNumber />}
               />
-              <Route path="/CheckPositiveNegativeOrZero" element={<CheckPositiveNegativeOrZero />} />
+              <Route
+                path="/CheckPositiveNegativeOrZero"
+                element={<CheckPositiveNegativeOrZero />}
+              />
               <Route path="/CheckOddOrEven" element={<CheckOddOrEven />} />
             </Routes>
           </div>
