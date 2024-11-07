@@ -6,17 +6,23 @@ const FindLargestAmongThree = () => {
     const [findLargestAmongThreeValue3, setFindLargestAmongThreeValue3] = useState(0);
     const [ansFindLargestAmongThree, setAnsFindLargestAmongThree] = useState(0);
     const getValue1 = (event) => {
-        findLargestAmongThreeValue1(event.target.value);
+        setFindLargestAmongThreeValue1(event.target.value);
     };
     const getValue2 = (event) => {
-        findLargestAmongThreeValue2(event.target.value);
+        setFindLargestAmongThreeValue2(event.target.value);
     };
     const getValue3 = (event) => {
-        findLargestAmongThreeValue3(event.target.value);
+        setFindLargestAmongThreeValue3(event.target.value);
     };
     const ans = () => {
-       if () {
-        
+       if ((Number(findLargestAmongThreeValue1))>=(Number(findLargestAmongThreeValue2))&&(Number(findLargestAmongThreeValue1))>=(Number(findLargestAmongThreeValue3))) {
+        setAnsFindLargestAmongThree(Number(findLargestAmongThreeValue1)+"Value One is the Biggest Among Three")
+       }
+       else if((Number(findLargestAmongThreeValue2))>=(Number(findLargestAmongThreeValue1))&&(Number(findLargestAmongThreeValue2))>=(Number(findLargestAmongThreeValue3))){
+        setAnsFindLargestAmongThree(Number(findLargestAmongThreeValue2)+"Value Two is Biggest Among Three")
+       }
+       else{
+        setAnsFindLargestAmongThree(Number(findLargestAmongThreeValue3)+"Value Three is Biggest Among Three")
        }
     }
   return (
@@ -26,6 +32,7 @@ const FindLargestAmongThree = () => {
         <input onChange={getValue2} type="number" />
         <input onChange={getValue3} type="number" />
         <button onClick={ans}>Click Me</button>
+        <p>Answer: {ansFindLargestAmongThree}</p>
     </div>
   )
 }
