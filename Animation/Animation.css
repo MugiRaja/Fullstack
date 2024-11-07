@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #98dede, #73acac, #507979);
+}
+.container1 i{
+    top: 15px;
+    left: 10px;
+    position: absolute;
+    font-size: 50px;
+    transition: 5s;
+    animation: myAnimation 5s linear infinite;
+
+  }
+
+  @keyframes myAnimation {
+    0% {transform: rotate(0deg); }
+    50% {transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+  }
+.a{
+    position: absolute;
+    left: 63px;
+    top: 20px;
+    z-index: -1;
+}
+.transform,
+.transitions,
+.animations{
+    width: 400px;
+    height: 450px;
+    background: linear-gradient(45deg, #98dede, #73acac, #507979);
+    display: flex;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px black;
+}
+.today{
+    margin-top:120px ;
+    width: 206vh;
+    height: 68%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.transform div{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #98dede, #73acac, #507979);
+    box-shadow: 5px 5px 15px black;
+    transform: rotate(45deg);
+}
+.transform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.transitions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.transitions div i{
+    font-size: 200px;
+    transition: 5s;
+}
+.transitions div i:hover{
+    color: brown;
+    transform: rotate(360deg);
+}
+  .animations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .balls{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    justify-content: space-between;
+
+  }
+  .ball1,
+  .ball2,
+  .ball3{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px black;
+  }
+
+  .ball1 {
+    animation: ball1 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes ball1 {
+    0% {  transform: translateY(0); }
+    50% {  transform: translatey(-250px); }
+    100% { transform: translateY(0); }
+  }
+
+  .ball3 {
+    animation: ball3 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes ball3 {
+    0% {  transform: translateY(0); }
+    50% {  transform: translatey(-250px); }
+    100% { transform: translateY(0); }
+  }
+
+  .ball2 {
+    animation: ball2 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes ball2 {
+    0% {  transform: translateY(-250px); }
+    50% {  transform: translatey(0); }
+    100% { transform: translateY(-250px); }
+  }
