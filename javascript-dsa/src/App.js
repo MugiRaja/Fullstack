@@ -11,6 +11,7 @@ import ConvertKilometersToMiles from "./DSA Pratices/ConvertKilometersToMiles";
 import CreateRandomNumber from "./DSA Pratices/CreateRandomNumber";
 import CheckOddOrEven from "./DSA Pratices/CheckOddOrEven";
 import CheckPositiveNegativeOrZero from "./DSA Pratices/CheckPositiveNegativeOrZero";
+import FindLargestAmongThree from "./DSA Pratices/FindLargestAmongThree";
 
 function App() {
   return (
@@ -54,6 +55,9 @@ function App() {
               <li>
                 <Link to="/CheckOddOrEven">Check Odd Or Even</Link>
               </li>
+              <li>
+                <Link to="/FindLargestAmongThree">Find Largest Among Three</Link>
+              </li>
             </ul>
           </div>
           <div className=" w-[70%]  flex justify-center items-center">
@@ -81,6 +85,10 @@ function App() {
                 element={<CheckPositiveNegativeOrZero />}
               />
               <Route path="/CheckOddOrEven" element={<CheckOddOrEven />} />
+              <Route
+                path="/FindLargestAmongThree"
+                element={<FindLargestAmongThree />}
+              />
             </Routes>
           </div>
         </div>
