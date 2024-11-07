@@ -48,7 +48,7 @@ const FindLargestAmongThree = () => {
       <div className="flex flex-col gap-1 ">
       <input className="rounded-lg"  onChange={getValue1} type="number" />
       <input className="rounded-lg" onChange={getValue2} type="number" />
-      <input className="rounded-lg" onChange={getValue3} type="number" />
+      <input className="rounded-lg"  onChange={getValue3} type="number" />
       </div>
       <button className="button" onClick={ans}>Click Me</button>
       <p>Answer: {ansFindLargestAmongThree}</p>
