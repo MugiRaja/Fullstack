@@ -12,6 +12,7 @@ import CreateRandomNumber from "./DSA Pratices/CreateRandomNumber";
 import CheckOddOrEven from "./DSA Pratices/CheckOddOrEven";
 import CheckPositiveNegativeOrZero from "./DSA Pratices/CheckPositiveNegativeOrZero";
 import FindLargestAmongThree from "./DSA Pratices/FindLargestAmongThree";
+import CheckPrime from "./CheckPrime";
 
 function App() {
   return (
@@ -58,6 +59,9 @@ function App() {
               <li>
                 <Link to="/FindLargestAmongThree">Find Largest Among Three</Link>
               </li>
+              <li>
+                <Link to="/CheckPrime">Check Prime Number</Link>
+              </li>
             </ul>
           </div>
           <div className=" w-[70%]  flex justify-center items-center">
@@ -89,7 +93,9 @@ function App() {
                 path="/FindLargestAmongThree"
                 element={<FindLargestAmongThree />}
               />
+              <Route path="/CheckPrime" element={<CheckPrime/>}/>
             </Routes>
+            
           </div>
         </div>
       </div>
