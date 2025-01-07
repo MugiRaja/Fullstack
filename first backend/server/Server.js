@@ -8,7 +8,7 @@ const app = express();
 
 //Database Connection
 
-mongoose.connect(MONGOOSE_URL);
+mongoose.connect(MONGOOSE_URL);       
 //Check the database connected to backend
 const db = mongoose.connection;
 
