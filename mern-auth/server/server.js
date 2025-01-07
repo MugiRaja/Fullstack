@@ -8,15 +8,17 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-app.use(cookieParser);
-app.use(cors({ credentails: true }));
+app.use(cookieParser());
+app.use(cors({ credentials: true }));
 
-app.get('/', (req, res) => res.send(console.log('hai...')));
+app.get('/', (req, res) => {
+  res.send("API is working");
+});
 
 app.listen(port, (error) => {
   if (error) {
-    console.log(`server fail to start on:${port}`);
+    console.log(`Server failed to start on port ${port}`);
   } else {
-    console.log(`server started on port:${port}`);
+    console.log(`Server started on port ${port}`);
   }
 });
